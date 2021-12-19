@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="container">
+      <div id="col-1">
+      <h1>LogIn</h1>
+      <TextField
+          id="outlined-textarea"
+          label="Username"
+          placeholder="username"
+          multiline
+          className="username"
+        />
+      <TextField
+          id="outlined-textarea"
+          label="Password"
+          placeholder="password"
+          multiline
+          className="password"
+        />
+        <Button className="button" variant="contained">Contained</Button>
+      </div>
+      <div id="col-2">
+        <img src={require('./assets/imgs/scraper22.png')} alt="scrap2per" />
+        <span id="firstH">ScrapperZilla</span>
+        <span id="secondH">Scrap all the content you want</span>
+      </div>
+    </section>
   );
 }
 
